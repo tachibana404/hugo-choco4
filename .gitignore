@@ -1,2 +1,3 @@
 # data-import 内のすべてのファイルを無視する
 data-import/*
+.cache
