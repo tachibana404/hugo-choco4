@@ -1,0 +1,169 @@
+// Author
+.author {
+    .author-name {
+      font-size: 1.2em;
+    }
+    .author-bio {
+        font-size: 0.9em;
+      }
+  }
+
+body {
+    background-color: #f7f7f7;
+}
+.nowplaying p {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.tag_area03 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tag_area03 ul li {
+    margin: 0 .3em .3em 0;
+  }
+  .tag_area03 ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    padding: 0 2.5em 0 1em;
+
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    font-size: 12px;
+    text-decoration: none;
+    -webkit-transition: .2s;
+    transition: .2s;
+    box-sizing: border-box;
+  }
+  .tag_area03 li span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: #fc5dbd;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 11px;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .tag_area03 ul li a:hover {
+    background-color: #fff;
+    border: 1px solid #fc5dbd;
+    color: #fc5dbd;
+  }
+  .tag_area03 ul li a:hover span {
+    background-color: #fc5dbd;
+    color: #fff;
+  }
+  .tag_area03 ul li a:before {
+    content: "#";
+    padding-right: 2px;
+  }
+
+/*画像付きツールチップ*/
+.m_tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.m_tooltip:hover::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px); /* 三角タブの分だけ下にずらす */
+  left: 150px; /* 画像の最大幅 */
+  width: 250px; /* テキスト領域の横幅を指定 */
+  height: 90px; /* テキスト領域の縦幅を指定 */
+  padding-left: 10px; /* 左側の余白 */
+  padding-top: 10px;
+  line-height: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 5px 5px 0; /* 右下と右下を5px丸める */
+  color: white; /* 文字色 */
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 100;
+}
+
+.m_tooltip:hover::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 5px); /* 三角タブを中央に配置 */
+  border-width: 0 5px 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+}
+
+.m_tooltip img {
+  display: none;
+}
+
+.m_tooltip:hover img {
+  border-radius: 5px 0 0 5px; /* 左上と左上を5px丸める */
+  display: block;
+  position: absolute;
+  top: calc(100% + 5px); /* 三角タブの分だけ下にずらす */
+  left: 0;
+  max-width: 150px;
+  z-index: 100;
+}
+
+.m_tooltip-content {
+  width: 250px; /* テキスト領域の横幅を指定 */
+  height: 90px; /* テキスト領域の縦幅を指定 */
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px); /* 三角タブの分だけ下にずらす */
+  left: 150px; /* 画像の最大幅 */
+  /* ツールチップのスタイリング */
+  background-color: rgba(0, 0, 0, 1);
+  color: yellow;
+  border-radius: 5px;
+}
+
+.m_tooltip:hover .m_tooltip-content {
+  display: block;
+}
+
+/* 追加: ツールチップテキストのスタイリング */
+.m_tooltip .m_tooltip-content {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px); /* 三角タブの分だけ下にずらす */
+  left: 150px; /* 画像の最大幅 */
+  width: 250px; /* テキスト領域の横幅を指定 */
+  height: 90px; /* テキスト領域の縦幅を指定 */
+  padding-left: 10px; /* 左側の余白 */
+  padding-top: 10px;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 5px 5px 0; /* 右下と右下を5px丸める */
+  font-size: 0.9em;
+  color: white;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 100;
+}

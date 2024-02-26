@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{{- $defaultColor := .Site.Params.defaultColor | default "auto" -}}
+
+{{/* allow website developer to enforce default dark mode */}}
+{{- if eq $defaultColor "dark" -}}
+<html lang="{{ .Site.LanguageCode }}" class="dark">
+{{- else if eq $defaultColor "light" -}}
+<html lang="{{ .Site.LanguageCode }}" class="light">
+{{- else -}}
+<html lang="{{ .Site.LanguageCode }}">
+{{- end -}}
+
+{{- partial "head.html" . -}}
+
+<body data-theme="{{ $defaultColor }}" class="notransition">
+    {{- partial "scriptsBodyStart.html" . -}}
+    {{- partial "header.html" . -}}
+    <div class="wrapper">
+        {{ partial "bio" . }}
+        <main aria-label="Content">
+            <h3 class="posts-item-note">Rescent Posts</h3>
+            {{ range .Site.Data.wordpress }}
+            <article class="post-item">
+                <span class="m_tooltip">
+                <h4 class="post-item-title">
+                    <a href="{{ .id }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a><img src="{{ .description }}" alt="{{ .title }}" />
+                  <span class="m_tooltip-content" aria-hidden="true">{{ .title }}<br />{{ .published }}
+                  </span>
+                </h4></span>
+
+                <time class="post-item-meta">
+                    {{ .published }}
+                </time>
+            </article>
+          {{ end }}
+
+
+        </main>
+    </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scriptsBodyEnd.html" . -}}
+</body>
+
+</html>

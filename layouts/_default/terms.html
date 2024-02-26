@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="wrapper list-page">
+    <header class="header">
+        <h1 class="header-title center">Tag</h1>
+    </header>
+    <main class="page-content" aria-label="Content">
+    {{if eq (len $.Site.Taxonomies.tags) 0}}
+    {{ i18n "nothing" }}
+    {{else}}
+    <section class="tag_area03">
+        <ul class="post-tags">
+            {{ range $.Site.Taxonomies.tags.ByCount }}
+            <li class="post-tag">
+                <a href="/tags/{{ .Name | urlize }}/">
+                    {{ .Name }}
+                    <span>{{ .Count }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </section>
+    
+</main>
+</div>
+{{ end }}
