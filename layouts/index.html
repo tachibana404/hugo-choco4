@@ -19,15 +19,16 @@
         {{ partial "bio" . }}
         <main aria-label="Content">
             <h3 class="posts-item-note">Rescent Posts</h3>
-            {{ range .Site.Data.wordpress }}
+            {{ $json := getJSON "data/wordpress.json" }}
+            {{ range $json.entries }}
             <div class="blog-card">
-                <a href="{{ .id }}">
-                <div class="blog-card-thumbnail"><img src="{{ .description }}" alt="{{ .title }}"></div>
+                <a href="{{ .link }}" target="_blank" rel="noopener noreferrer">
+                <div class="blog-card-thumbnail"><img src="{{ .image_url }}" alt="{{ .title }}"></div>
                 <div class="blog-card-content">
                 <div class="blog-card-title">{{ .title }}</div><br />
                 <div class="blog-card-excerpt">
                     {{ .published }}<br />
-                    <div class="blog-card-url">{{ .id }}</div>
+                    <div class="blog-card-url">{{ .link }}</div>
                 </div>
                 </div>
                 </a>
