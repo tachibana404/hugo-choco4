@@ -87,8 +87,8 @@ disqusShortname = ''
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "Citrus.Choco.Ink"
-  name = "たちばな"
-  description = "あああ"
+  name = ""
+  description = ""
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]

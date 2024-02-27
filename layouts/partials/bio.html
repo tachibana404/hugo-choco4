@@ -11,7 +11,7 @@
     <p class="author-bio">{{ .Site.Params.author.description }}</p>
     <h2 class="author-name">{{ .Site.Params.author.intro }}</h2>
             <div class="nowplaying">
-                <div class="now-title">Now Playing ♫</div>
+                <div class="now-title"><i class="fa-solid fa-music"></i> Now Playing</div>
                 {{ with index .Site.Data.music 0 }}
                 {{ .title }}<br />
                 <div class="now-date">{{ .pubDate }}</div>
