@@ -1,4 +1,4 @@
-title = "Choco.Holic.Blue"
+title = "Citrus.Choco.Ink"
 baseURL = 'http://localhost:1313/'
 
 # This is what goes in <html lang="">
@@ -86,9 +86,9 @@ disqusShortname = ''
 [Languages.en-gb.params.author]
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "Choco.Holic.Blue"
-  name = " "
-  description = ""
+  intro = "Citrus.Choco.Ink"
+  name = "たちばな"
+  description = "あああ"
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]
