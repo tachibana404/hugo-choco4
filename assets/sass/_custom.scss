@@ -80,6 +80,94 @@ section ul {
     padding-right: 2px;
   }
 
+/*-------------------------
+  ブログカード
+-------------------------*/
+a.nm-card {
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  display: block;
+  padding: 20px;
+  position: relative;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+a.nm-card:hover {
+  box-shadow: none;
+  opacity: .8;
+}
+
+.nm-card-box {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.nm-card-title {
+  font-size: 1.0em;
+  font-weight: 600;
+  color: #fc5dbd;
+  padding-bottom: 5px;
+}
+
+.nm-card-thumbnail {
+  flex: 1;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+.nm-card-thumbnail img {
+  width: 100%;
+}
+
+.nm-card-content {
+  flex: 2.5;
+}
+.nm-card-excerpt {
+  color: #808080;
+  font-size: 0.8em;
+  padding-bottom: 15px;
+  text-align: right;
+}
+.nm-card-site {
+  border-top: dashed 1px #a4a4a4;
+  color: #b2b2b2;
+  font-size: 0.8em;
+  text-align:right;
+  padding-left: 5px;
+}
+.nm-card-site img {
+  margin-right: 5px;
+  vertical-align: bottom;
+  width: 20px;
+}
+@media (max-width: 980px) {
+  .nm-card-excerpt {
+      border: none;
+  }
+}
+@media (max-width: 640px) {
+  a.nm-card {
+      padding: 10px 10px 20px 10px;
+  }
+  .nm-card-thumbnail {
+      margin-right: 10px;
+      padding-top: 10px;
+  }
+  .nm-card-title {
+      font-size: 1.0em;
+  }
+  .nm-card-excerpt {
+      display: none;
+  }
+}
+
 /*画像付きツールチップ*/
 .m_tooltip {
   position: relative;

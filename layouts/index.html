@@ -20,23 +20,23 @@
         <main aria-label="Content">
             <h3 class="posts-item-note">Rescent Posts</h3>
             {{ range .Site.Data.wordpress }}
-            <article class="post-item">
-                <span class="m_tooltip">
-                <h4 class="post-item-title">
-                    <a href="{{ .id }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a><img src="{{ .description }}" alt="{{ .title }}" />
-                  <span class="m_tooltip-content" aria-hidden="true">{{ .title }}<br />{{ .published }}
-                  </span>
-                </h4></span>
-
-                <time class="post-item-meta">
-                    {{ .published }}
-                </time>
-            </article>
+            <a href="{{ .id }}" class="nm-card" target="_blank" rel="noopener noreferrer">
+                <div class="nm-card-box">
+                    <div class="nm-card-thumbnail">
+                        <img src="{{ .description }}" alt="{{ .title }}">
+                    </div>
+                    <div class="nm-card-content">
+                        <div class="nm-card-title">{{ .title }}</div>
+                        <div class="nm-card-excerpt">{{ .published }}</div>
+                        <div class="nm-card-site">{{ .id }}</div>
+                    </div>
+                </div>
+            </a>
           {{ end }}
-
 
         </main>
     </div>
+    
     {{- partial "footer.html" . -}}
     {{- partial "scriptsBodyEnd.html" . -}}
 </body>
