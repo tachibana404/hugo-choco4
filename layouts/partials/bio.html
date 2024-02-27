@@ -7,13 +7,13 @@
     <img class="author-avatar" src="{{ $image.RelPermalink }}" alt="{{ $avatar_img_alt }}" width="{{ .Width }}"
         height="{{ .Height }}" />
     {{ end }}
+    <p class="author-bio">{{ .Site.Params.author.description }}</p>
     <h2 class="author-name">{{ .Site.Params.author.intro }}</h2>
             <div class="nowplaying">
-                Now Playing<br />
+                <div class="now-title">Now Playing ♫</div>
                 {{ with index .Site.Data.music 0 }}
-                ♫ {{ .title }}<br />
-                <p>{{ .pubDate }}</p>
+                {{ .title }}<br />
+                <div class="now-date">{{ .pubDate }}</div>
                 {{ end }}
             </div>
-    <p class="author-bio">{{ .Site.Params.author.description }}</p>
 </div>
