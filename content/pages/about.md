@@ -16,10 +16,10 @@ author: たちばな
 
 ### Other Site
 * <i class="fa-solid fa-file-pen"></i> [Choco.Holic.Blue](https://choco.holic.blue)  
-自分が分かればそれでいいというスタンスのメモ置き場。  
+自分が分かればそれでいいというスタンスのメモ置き場。<i class="fa-brands fa-wordpress"></i> WordPress
 
 * <i class="fa-solid fa-camera"></i> [Photo.Holic.Blue](https://photo.holic.blue)  
-ひたすら撮った写真をあげていく写真置き場。
+ひたすら撮った写真をあげていく写真置き場。<i class="fa-brands fa-wordpress"></i> WordPress
 
 ### Fediverse
 * <i class="fa-solid fa-rocket"></i> [@tachibana@milk.choco.ink](https://milk.choco.ink/@tachibana)  
