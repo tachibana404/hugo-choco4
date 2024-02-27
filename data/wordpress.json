@@ -1,38 +1,46 @@
-[
-    {
-        "title": "『VERY RUBY CUT いちご缶 スイート』が気になる",
-        "published": "Thu, 15 Feb 2024",
-        "id": "https://choco.holic.blue/?p=399",
-        "description": "https://choco.holic.blue/wp-content/uploads/2024/02/sub1-2.jpg"
-    },
-    {
-        "title": "2024.02.09（3photos）",
-        "published": "Tue, 13 Feb 2024",
-        "id": "https://photo.holic.blue/?p=8113",
-        "description": "https://photo.holic.blue/wp-content/uploads/2024/02/em10-14-42-20240209-02-1024x682.jpg"
-    },
-    {
-        "title": "『オリムパス くぐり刺しの花ふきん 朝顔』",
-        "published": "Tue, 13 Feb 2024",
-        "id": "https://choco.holic.blue/?p=389",
-        "description": "https://choco.holic.blue/wp-content/uploads/2024/02/em10-14-42-20240209-02-1024x682.jpg"
-    },
-    {
-        "title": "『ヨックモックドゥーブル ショコラ オゥ サクラ』が気になる",
-        "published": "Fri, 09 Feb 2024",
-        "id": "https://choco.holic.blue/?p=369",
-        "description": "https://choco.holic.blue/wp-content/uploads/2024/02/main-1024x683.jpg"
-    },
-    {
-        "title": "2024.01.21（28photos）",
-        "published": "Sun, 21 Jan 2024",
-        "id": "https://photo.holic.blue/?p=8075",
-        "description": "https://photo.holic.blue/wp-content/uploads/2024/01/em10-pla50-20240121_17ipcaw-1024x682.jpg"
-    },
-    {
-        "title": "2023.12.23（25photos）",
-        "published": "Sat, 23 Dec 2023",
-        "id": "https://photo.holic.blue/?p=8009",
-        "description": "https://photo.holic.blue/wp-content/uploads/2023/12/em10-tam90-20231223_11sfrwp-1024x682.jpg"
-    }
-]
+{
+    "entries": [
+        {
+            "title": "『VERY RUBY CUT いちご缶 スイート』が気になる",
+            "published": "Thu, 15 Feb 2024",
+            "link": "https://choco.holic.blue/very-ruby-cut-ichigokan/",
+            "image_url": "https://choco.holic.blue/wp-content/uploads/2024/02/sub1-2.jpg",
+            "text": "『VERY RUBY CUT』からとても気になるお菓子の詰め合わせが発売されます。これがまたとっても素敵。 なんですか、このおいしそうなお菓子は。 なんですか、この可愛い缶は。 可愛すぎる！私の中の乙女心がうずきます 2 […]"
+        },
+        {
+            "title": "『オリムパス くぐり刺しの花ふきん 朝顔』",
+            "published": "Tue, 13 Feb 2024",
+            "link": "https://choco.holic.blue/olympus-asagao/",
+            "image_url": "https://choco.holic.blue/wp-content/uploads/2024/02/em10-14-42-20240209-02-1024x682.jpg",
+            "text": "今は2月、暦の上では春といったところ。ずいぶん季節外れな感じがしますが、くぐり刺しの朝顔ができました。 季節外れの理由はこれ、やりかけて半年くらい放置してたやつだから。本当だったら2023年の夏に仕上げてしまうつもりだっ […]"
+        },
+        {
+            "title": "",
+            "published": "Tue, 13 Feb 2024",
+            "link": "https://photo.holic.blue/2024-02-09/",
+            "image_url": "https://photo.holic.blue/wp-content/uploads/2024/02/em10-14-42-20240209-02-1024x682.jpg",
+            "text": "]]>"
+        },
+        {
+            "title": "『ヨックモックドゥーブル ショコラ オゥ サクラ』が気になる",
+            "published": "Fri, 09 Feb 2024",
+            "link": "https://choco.holic.blue/yokumoku-sakura/",
+            "image_url": "https://choco.holic.blue/wp-content/uploads/2024/02/main-1024x683.jpg",
+            "text": "ヨックモックから春限定の『ドゥーブル ショコラ オゥ サクラ』が2024年2月15日（木）から発売されるとのことでこれまた気になっている。……缶がほしいというどうしようもない理由で。いや、もちろん桜のクッキーもおいしそう […]"
+        },
+        {
+            "title": "",
+            "published": "Sun, 21 Jan 2024",
+            "link": "https://photo.holic.blue/2024-01-21/",
+            "image_url": "https://photo.holic.blue/wp-content/uploads/2024/01/em10-pla50-20240121_17ipcaw-1024x682.jpg",
+            "text": "]]>"
+        },
+        {
+            "title": "",
+            "published": "Sat, 23 Dec 2023",
+            "link": "https://photo.holic.blue/2023-12-23/",
+            "image_url": "https://photo.holic.blue/wp-content/uploads/2023/12/em10-tam90-20231223_11sfrwp-1024x682.jpg",
+            "text": "]]>"
+        }
+    ]
+}
